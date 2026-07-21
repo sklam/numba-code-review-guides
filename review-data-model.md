@@ -2,6 +2,10 @@
 
 **Document Purpose**: Educational reference for code reviewers and contributors working with Numba's data model system, based on lessons from PR #10657 review.
 
+**Triggers**: `data_model_manager` · `._fe_type` · `from_data(` · `as_data(` ·
+`load_item` / `store_item` · `builder.load(` / `builder.store(` on an `alloca` or array pointer ·
+`alloca_once_value`.
+
 **Key References**:
 - GitHub PR #10657, Review #4715817475 by @sklam
 

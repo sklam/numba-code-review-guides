@@ -2,6 +2,9 @@
 
 **Document Purpose**: Educational reference for code reviewers and contributors working with LLVM pointer operations in Numba, based on lessons from PR #10696 and issues #10695, #10605.
 
+**Triggers**: `ptrtoint` · `inttoptr` · `pointer_add` · `builder.add(` / `builder.sub(` on a pointer ·
+pointer stored in an `intp_t` `alloca` · `bitcast` for cast-plus-offset.
+
 **Key References**:
 - GitHub PR #10696: "Use gep in pointer_add"
 - GitHub Issue #10695: "MemoryError from 'A'-layout array access"

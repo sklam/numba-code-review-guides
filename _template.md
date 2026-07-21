@@ -30,6 +30,9 @@ Header, then sections in this order. Drop any section with nothing terse to say.
 **Document Purpose**: Educational reference for code reviewers and contributors
 working with <area> in Numba, based on lessons from <PRs/issues>.
 
+**Triggers**: `token_a` · `token_b(` · `token_c` — reach for this guide when a diff
+contains these. (See below.)
+
 **Key References**:
 - GitHub PR #NNNNN: "<title>"
 - GitHub Issue #NNNNN: "<title>"
@@ -41,6 +44,13 @@ working with <area> in Numba, based on lessons from <PRs/issues>.
 
 ---
 ```
+
+- **Triggers** — a one-line, scannable list of the *literal* code tokens (function
+  names, IR ops, attribute accesses) whose appearance in a diff means this guide
+  applies. Put them in backticks so a reviewer (or a grep) can match them against the
+  diff at a glance. This is the "is this guide relevant?" index — keep it to concrete
+  strings, not concepts. Every distinctive token named in the guide's Wrong/Right code
+  should appear here.
 
 - **Concept** — what the thing is and the one key principle. A few sentences.
 - **Common Mistakes / Anti-Patterns** — ❌ Wrong code, one-line *why*, ✅ Correct.
